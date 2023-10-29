@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#left-content {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#left-content h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-family:sans-serif, bold ;
+    font-size: 35px;
+}
+
+/* Estilos para centrar la barra de navegación en el medio de la página */
+#navbar-container {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(310, 52%, 25%); 
+    padding: 10px 20px;
+}
+
+#navbar-container ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos del menú */
+    padding: 0;
+}
+
+#navbar-container ul li {
+    margin: 0 10px; 
+}
+
+#navbar-container ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 20px; /* Tamaño de fuente deseado */
+    transition: color 0.3s, transform 0.3s; /* Agregar transiciones para el color y la transformación */
+}
+
+#navbar-container ul li a:hover {
+    color: orange; /* Cambiar el color al pasar el mouse por encima */
+    transform: scale(1.1); /* Escalar el texto al pasar el mouse por encima */
+}
+.cara{
+    border-radius: 500px;
+    height: 200px;
+}
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    color: white;
+    background: linear-gradient(to bottom, #000000, #808080);
+    
+    
+}
+.uno h1 {
+    font-size: 40px; /* Tamaño de fuente deseado */
+    
+}
+.uno p{
+    font-size: 25px;
+}
+.caja-central{
+    margin-top: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+}
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: #424242;
+}
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: #F2F2F2;
+    color: black;
+    padding: 10px;
+}
+.dos{
+    background-color: #e2eff7;
+    padding: 40px;
+    border: 1px solid #e2eff7;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.contenedor-seccion{
+    background-color: #e2eff7;
+}
+.dos h2 {
+    font-size: 40px; /* Tamaño de fuente deseado */
+    text-decoration: underline; /* Agregar subrayado */
+}
+.dos p{
+    font-size: 20px;
+}
+.aptitudes{
+    width: 100%;
+    text-align: center;
+    
+}
+.tech-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.tech{
+    height: 90px;
+    margin: 0 45px;
+}
+.tres{
+    background-color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar verticalmente y horizontalmente */
+    color: black;
+    
+}
+.tres h2 {
+    font-size: 40px; /* Tamaño de fuente deseado */
+    text-decoration: underline; /* Agregar subrayado */
+    text-align: center;
+}
+.tres h3{
+    font-size: 20px;
+    text-align: center;
+}
+.cuatro{
+    background-color: #e2eff7; /* Color de fondo */
+    padding: 20px 0;
+    text-align: center;
+}
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.cuatro h2{
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+}
+.cursos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cursos ul li{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.cursos ul li a{
+    text-decoration: none;
+    color: blue;
+}
+.cursos ul li a:hover{
+    text-decoration: underline;
+}
+.cursos ul li::before {
+    content: "\2022"; /* Utiliza un marcador de lista circular (puedes cambiarlo por otro si lo deseas) */
+    color: black; /* Color del marcador */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Alinea el marcador con el texto */
+    font-size: 18px; /* Tamaño del marcador */
+    margin-right: 5px; /* Espacio entre el marcador y el texto */
+}
+.cinco{
+    background-color: white;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    color: black; 
+}
+.proyectos{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    text-align: center;
+    width: 40%;
+    border: solid black 4px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #424242;
+}
+.cinco h2{
+    font-size: 40px;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+.cinco h3{
+    font-size: 25px;
+    color: white;
+}
+.cinco p{
+    font-size: 20px;
+    color: white;
+}
+.card a {
+    color: green; /* Cambia el color del enlace a azul (o el color de tu elección) */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse por encima del enlace */
+}
+footer{
+    background: linear-gradient(to bottom,#808080,#000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+.contacto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.red-social{
+    height: 70px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .caja-central{
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+    }
+    .caja-cara{
+        width: 100%;
+        height: 50%;
+    }
+    .caja-presentacion{
+        width: 100%;
+        height: 50%;
+        align-items: flex-start;
+    }
+    .aptitudes{
+        width: auto;
+    }
+    .cuatro{
+        height: auto;
+        padding: 0 10px 10px 10px;
+
+    }
+    .cinco{
+        height: auto;
+    }
+    .proyectos{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    .card{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .red-social{
+        margin: 0 10px 0 10px;
+    }
+   
+}
+
+
+
+
+
